@@ -1,3 +1,3 @@
 export default ngModule => {
-  require('./kcd-hello')(ngModule);
+  require('./kcd-hello').default(ngModule);
 };
