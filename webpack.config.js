@@ -8,8 +8,19 @@ module.exports = {
 
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel', exclude: /node_modules/},
-      {test: /\.html$/, loader: 'raw', exclude: /node_modules/}
+      {
+        test: /\.js$/, 
+        loader: 'babel', 
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015']
+        }
+      },
+      {
+        test: /\.html$/, 
+        loader: 'raw', 
+         exclude: /node_modules/
+       }
     ]
   }
 };
