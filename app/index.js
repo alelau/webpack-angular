@@ -7,4 +7,4 @@ if (ON_TEST) {
 
 const ngModule = angular.module('app', []);
 
-require('./directives')(ngModule);
+require('./directives').default(ngModule);
